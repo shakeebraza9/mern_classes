@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color:yellow;
+    border: 10px  solid black;
+    align-items: center;
+    box-sizing: border-box;
+    width: 50%;
+    height: 50px;
+    /* text-align: center; */
+    /* padding: 20px; */
+    /* margin: 0px; */
+    /* padding-top: 30px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    padding-right: 10px; */
+
+    /* clock wise dirction top -> right -> bottom -> left */
+    /* padding: 30px 10px 10px 80px; */
+    
+    /* padding : top-bottom -> right-left */
+    /* padding: 30px 10px; */
+    
+    /* padding : top -> right-left ->bottom  */
+    /* padding: 30px 10px 20px; */
+
+    /* only single side */
+        /* padding: 30px 0px 0px 0px;
+        padding: 0px 20px 0px 0px;
+        padding: 0px 0px 20px 0px;
+        padding: 0px 0px 0px 20px; */
+        
+        
+        margin: auto;
+
+}
+span{
+    /* display: block; */
+    display: inline-flex;
+    /* display: inline-block; */
+    margin: 50px;
+    width: 100px; 
+    height: 100px;
+    /* width height margin top and buttom not working in inline element  */
+    padding: 20px;
+    border: 1px solid black;
+}

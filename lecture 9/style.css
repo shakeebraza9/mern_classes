@@ -1,0 +1,36 @@
+#container{
+    border: 1px solid black;
+    width: 700px;
+    height: 400px;
+    background-image: url(bg.jpg) ;
+    background-repeat: repeat-y;
+    background-size: contain;/* auto contain cover*/
+}
+h1{
+    /* Normal */
+    /* color: azure; */
+    
+    /*Hex code value  */
+    /* color: #4646aac7; */
+
+    /* rgb code coat */
+    /* color: rgb(107, 156, 159); */
+
+    
+    /* rgba code coat */
+    /* color: rgba(107, 156, 159,0.900); */
+
+    /* hsl code coat */
+   color: hsl(68, 50%, 50%);
+   color: hsla(62, 89%, 45%, 0.921);
+}
+body{
+    /* background: linear-gradient(to left,red,orange); */
+    /* background: radial-gradient(50% 50%,orange,red); */
+    /* background: conic-gradient(red,orange); */
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 19%, rgba(25,46,79,1) 42%, rgba(108,108,194,1) 66%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}

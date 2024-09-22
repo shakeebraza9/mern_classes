@@ -1,0 +1,29 @@
+h3{
+    color:rgb(239, 215, 171);
+}
+div.wapper{
+    background-color: aqua;
+}
+div#hello{
+    background-color: rgb(205, 141, 153);
+}
+div.container{
+    background-color: red;
+    color: whitesmoke;
+}
+
+/* ul li:nth-child(3){
+    background-color: blue;
+}
+
+ul li:nth-last-child(5){
+    background-color: rgb(159, 159, 243);
+} */
+
+ul li:nth-of-type(2n +1){
+    background-color: rgb(159, 159, 243);
+}
+li:hover{
+    background-color: black;
+    color: white;
+}
