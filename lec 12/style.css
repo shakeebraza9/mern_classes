@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+font-size: 60px;
+}
+
+.parent{
+    /*border: 1px solid rgb(165, 33, 77);
+    width: 300px;
+    height: 400px;*/
+    background-color: palevioletred;
+    width: 50vw;  /*viewport width*/
+    height: 50vh; /*viewport hieght*/
+    font-size: 20px;
+}
+
+.child{
+    /*margin: auto;*/
+    display: inline-block;
+    background-color: plum;
+    width: 60%;
+    height: 40%;
+    font-size: 1rem;
+    /*font-size: 1em;*/
+}
