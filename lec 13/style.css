@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    border: 1px solid red;
+    width: 50vw;
+    /* min-height: 100vh; */
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    /* main axis */
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    /* cross axis */
+    align-items: center;
+
+    /* flex wrap k bina alig-content nhi dy sakty ho */
+    flex-wrap: wrap;
+    align-content:space-around;
+    gap: 20px;
+    /* align-self: self-end; */
+    /* float:right; */
+}
+.box{
+    background-color: violet;
+    border:1px solid black;
+    width: 100px;
+    height: 100px;
+
+}
+.box2{
+    /* align-self: end; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+}
