@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 100vw;   
+    height: 100vh;
+    overflow-x: hidden;
+}
+.storemain{
+    margin: auto;
+    min-height: 100%;
+  
+    border: none;
+    border-radius: 10px;
+    backdrop-filter:blur(5px) ;
+    /* background-color: rgba(229, 229, 216, 0.858); */
+    width: 70%;
+
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(216, 64, 64);
+    padding: 30px;
+}
+.shoes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 7px 7px 10px rgb(201, 201, 201);
+    margin-bottom: 20px;
+
+}
+.card div:nth-child(1) > img{
+    /* width: 100%; */
+}
+.cardimg{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.cardimg > img{
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+    object-fit: cover;
+}
+.cardimg > img:hover{
+    scale: 1.5;
+    transition: 0.2s all ease-out;
+   
+}
+.carddel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+    gap: 10px;
+}
+.del{
+    display: flex;
+    flex-direction: column;
+    gap :5px;
+}
+.cardicon > img{
+    width: 70%;
+}
