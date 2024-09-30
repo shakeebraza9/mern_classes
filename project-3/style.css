@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 *{
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     
 }
@@ -11,6 +13,8 @@
     height: 100vh;
 }
 .navbar{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +43,7 @@
     font-size: 12px;
     background-color: black;
     border: 1px solid #303030;
-    color: #303030;
+    color: #f7eded;
 }
 .centernav img:nth-child(2){
     padding: 5px 15px;
@@ -127,10 +131,173 @@
     align-items: center;
     text-align: center;
 }
-.centerft >img{
+/* .centerft >img{
     margin-bottom: 30px;
-    
-}
+    gap:0px;
+} */
 .feature div:nth-child(1)>p,.feature div:nth-child(2)>p,.feature div:nth-child(3)>p {
     color: rgba(255, 255, 255, 0.514);
 }
+.bg1{
+    background-image: url(assets/bg1.jpeg);
+    height: 70%;
+    background-size: cover;
+}
+.bg1 > div > h2{
+    font-size: 2em;
+    font-weight: bolder;
+}
+.bg1 > div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 0px 0px 800px;
+    color: beige;
+}
+.bg1 > div >p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.759);
+}
+
+
+
+
+.bg2{
+    background-image: url(assets/bg2.jpeg);
+    height: 70%;
+    background-size: cover;
+}
+.bg2 > div > h2{
+    font-size: 2em;
+    font-weight: bolder;
+}
+.bg2 > div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 0px 0px 400px;
+    color: beige;
+}
+.bg2 > div >p{
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.759);
+}
+
+
+
+.bg3{
+    background-image: url(assets/bg3.jpeg);
+    height: 70%;
+    background-size: cover;
+}
+.bg3 > div > h2{
+    font-size: 2em;
+    font-weight: bolder;
+}
+.bg3 > div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 0px 0px 800px;
+    color: beige;
+}
+.bg3 > div >p{
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.759);
+}
+
+
+
+.bg4{
+    background-image: url(assets/bg4.jpeg);
+    height: 70%;
+    background-size: cover;
+}
+.bg4 > div > h2{
+    font-size: 2em;
+    font-weight: bolder;
+}
+.bg4 > div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 0px 0px 400px;
+    color: beige;
+}
+.bg4 > div >p{
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.759);
+}
+
+.faqs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 62%;
+    color: white;
+    
+}
+.faqDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+.faqDetail > p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.drop{
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+hr{
+    opacity: 0.2;
+}
+.helpCenter >p{
+    font-size: 15px;
+    font-weight: 800;
+    padding-right: 420px;
+    margin-top: 40px;
+}
+.helpCenter >p >span{
+ color: #3ea6ff;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000; 
+    border-radius: 10px; 
+    border: 2px solid #000000; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: #fffefe #000000; 
+}
+
+
