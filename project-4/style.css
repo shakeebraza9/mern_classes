@@ -9,14 +9,14 @@
     width: 100vw;
     min-height: 100vh;
     background-color: #fcf5eb;
-    padding: 0 40px;
+    
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
-    
+    padding: 20px 40px;
 }
 .navbar img:nth-child(1){
     width: 130px;
@@ -103,7 +103,7 @@ cursor: pointer;
     flex-direction: column;
     padding-top: 40px;
     width: 100%;
-
+    padding: 0 40px;
 
 }
 .bgimage{
@@ -308,4 +308,75 @@ width: 160px;
     font-weight: 700;
     overflow: hidden;
 }
+.thirdSection{
+    width:100%;
+    overflow: hidden;
+}
+.firstBday{
+    width: 100%;
+    margin-top:50px ;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 200px;
 
+}
+.leftPart p:nth-child(1){
+    overflow: hidden;
+    font-size: 3em;
+    line-height: 38px;
+    font-weight: 600;
+
+}
+.leftPart p:nth-child(2){
+
+    font-weight: 600;
+    padding-top: 20px;
+}
+.learnMore{
+    position: relative;
+    overflow: hidden;
+
+}
+.learnMore > span{
+    width: 30%;
+    display: inline-block;
+    padding-top: 40px;
+    font-size: 16px;
+    /* text-decoration: 2px underline #25d366 ; */
+}
+.learnMore > img{
+    margin-right: 10px;
+    rotate: 180deg;
+}
+.learnMore::before{
+    width:26%;
+    height: 10px;
+    content: '';
+    position: absolute;
+    top: 97%;
+    bottom: 0%;
+    background-color: #25d366;
+}
+.beach{
+    position: relative;
+}
+.beach img:nth-child(2){
+    position: absolute;
+    width: 320px;
+    top: 150px;
+    right: 2%;
+}
+.groupchat{
+    position: relative;
+}
+.groupchat img:nth-child(2){
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    right: -10%;
+}
+.bgChange{
+    padding: 60px;
+    background-color: #111b21;
+}
