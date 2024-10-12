@@ -7,7 +7,7 @@
 }
 .container{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fcf5eb;
     padding: 0 40px;
 }
@@ -108,7 +108,7 @@ cursor: pointer;
 }
 .bgimage{
     background-image: url(whatsaap/MaaBeti.png);
-    height: 80%;
+    height: 900px;
     border-radius: 30px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -284,5 +284,28 @@ cursor: pointer;
 .btn2{
 width: 160px;
 }
+.secoundsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    overflow-y: hidden;
+    
+}
+.secoundsection > img{
+    width: 90%;
+  
+}
 
+.secoundsection > p{
+    width: 50%;
+    text-align: center;
+    font-size: 2.7em;
+    letter-spacing: -1px;
+    line-height: 50px;
+    font-weight: 700;
+    overflow: hidden;
+}
 
