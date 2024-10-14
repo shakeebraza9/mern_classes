@@ -2,21 +2,21 @@
 
 *{
     margin: 0;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
-    
 }
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 100vw;
     height: 100vh;
     background-image: url(bg.png);
     background-size: cover;
-
+    background-position: center;
 }
+
 .loginpage{
     display: flex;
     flex-direction: column;
@@ -25,18 +25,55 @@
     width: 50%;
     height: 70%;
     background-color: rgba(70, 70, 70, 0.804);
-    /* filter: blur(1px); */
     backdrop-filter: blur(2px);
     border-radius: 10px;
     gap: 20px;
-
+    padding: 20px;
 }
+
+
 .inpudiv{
     display: flex;
     flex-direction: column;
     gap: 20px;
-     width: 50%;
+    width: 50%;
 }
+
+
+input[type="text"], input[type="password"]{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100%;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height:15px;
+}
+input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+button{
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    background: linear-gradient(40deg, rgb(210, 107, 29), rgb(41, 38, 38));
+}
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(rgb(222, 111, 25), rgb(25, 23, 23));
+}
+
+h1{
+    font-size: 60px;
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.774);
+}
+
+
 .forgetpass{
     display: flex;
     flex-direction: row;
@@ -45,7 +82,6 @@
     padding-top: 10px;
     font-size: 15px;
     font-weight: bold;
-  
 }
 .forget{
     text-decoration: underline;
@@ -55,36 +91,50 @@
     cursor: pointer;
     color: rgba(229, 238, 238, 0.733);
 }
-h1{
-    font-size: 60px;
-    font-family: "Playwrite DE Grund", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.774);
+
+
+@media (max-width: 768px) {
+    .loginpage {
+        width: 70%; 
+        height: 80%;
+    }
+
+    .inpudiv {
+        width: 80%; 
+    }
+
+    .forgetpass {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    button {
+        padding: 15px 30px;
+    }
 }
-input[type="text"],input[type="password"]{
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-   
-}
-input[type="checkbox"]{
-    width: 20px;
-    height:15px;
-}
-input[type="checkbox"]:hover{
-cursor: pointer;
-}
-button{
-    padding: 20px 40px;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-    background: linear-gradient(40deg,rgb(210, 107, 29),rgb(41, 38, 38));
-}
-button:hover{
-    cursor: pointer;
-    background: linear-gradient(rgb(222, 111, 25),rgb(25, 23, 23));
+
+@media (max-width: 480px) {
+    .loginpage {
+        width: 90%; 
+        height: 90%;
+    }
+
+    .inpudiv {
+        width: 90%; 
+    }
+
+    .forgetpass {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 30px; 
+    }
+
+    button {
+        padding: 10px 20px; 
+    }
 }
