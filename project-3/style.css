@@ -6,6 +6,8 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+        scrollbar-width: thin; 
+    scrollbar-color: #fffefe #000000; 
     
 }
 .container{
@@ -298,11 +300,15 @@ hr{
 }
 
 
-* {
-    scrollbar-width: thin; 
-    scrollbar-color: #fffefe #000000; 
-}
 
+
+
+.bg1 > div > p,.bg2 > div > p,.bg3 > div >p,.bg4 > div > p {
+
+    width: 270px;
+ 
+
+}
 @media screen and (max-width:480px) {
     .centernav {
         display: none;
@@ -366,9 +372,44 @@ hr{
     .feature div:nth-child(3){
         margin-bottom: 30px;
     }
+    .bg1,.bg2,.bg3,.bg4 {
+        height: 30%;
+        overflow: hidden;
+        background-position: center;
+      
+    }
+    .bg1 > div,.bg2 > div,.bg3 > div,.bg4 > div {
+        padding: 0 10px 10px 3px;
+        height: 100%;
+        width: 95%;
+        justify-content: end;
+        gap:10px;
+
+    }
+    .headd{
+        font-size: 1.5em !important;
+        margin-left:5px ;
+        
+    }
+    .pphara{
+        font-size: 16px;
+        margin-left:5px ;
+    }
+    .faqs {
+        height: 80%;
+    }
+
+    .helpCenter >p {
+        margin: auto;
+        width: 50%;
+        padding-right: 0px;
+        padding-top: 24px;
+        
+    }
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {
+    
     
 }
 
