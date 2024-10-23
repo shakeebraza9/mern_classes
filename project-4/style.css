@@ -510,3 +510,43 @@ select{
     right: 20px;
     rotate: 180deg;
 }
+.navbar2{
+    display: none;
+}
+@media screen and (max-width:480px) {
+    .navbar{
+        display: none;
+    }
+    .navbar2{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .btn2 {
+        background-color: #25d366;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+    .whatsappLogo2{
+        width: 23%;
+    }
+    .right img:nth-child(4) , .right img:nth-child(5) ,.right img:nth-child(6) ,.right img:nth-child(7) {
+        display: none;
+    }
+    
+}
+@media screen and (min-width:481px) and (max-width:769px) {
+    
+}
+
+@media screen and (min-width:769px) and (max-width:1200px) {
+    
+}
+
+@media screen and (min-width:1201px) {
+    
+}
