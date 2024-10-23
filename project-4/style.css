@@ -525,7 +525,7 @@ select{
         margin-bottom: 10px;
     }
 
-    .btn2 {
+    .btn3 {
         background-color: #25d366;
         border-radius: 50%;
         width: 30px;
@@ -537,7 +537,32 @@ select{
     .right img:nth-child(4) , .right img:nth-child(5) ,.right img:nth-child(6) ,.right img:nth-child(7) {
         display: none;
     }
-    
+    .bgimage{
+        flex-direction: column-reverse;
+        height: 600px;
+        background-position: center;
+    }
+    .leftmsg > h1 {
+        font-size: 30px;
+        font-weight: bolder;
+        line-height: 37px;
+        letter-spacing: 5px;
+    }
+    .right img:nth-child(3) {
+      
+        margin-right: 25px;
+        width: 90%;
+        height: 50%;
+        margin-top: 20px;
+        animation: chai 1.8s ease-in-out;
+    }
+    .left {
+        height: 600px;
+    }
+    .right {
+        width: 95%;
+        margin-top: 50px;
+    }
 }
 @media screen and (min-width:481px) and (max-width:769px) {
     
