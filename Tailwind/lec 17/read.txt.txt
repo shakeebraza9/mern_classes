@@ -1,0 +1,26 @@
+1) install npm node packge manager
+2) npm init -y
+3) npm install -D tailwindcss postcss autoprefixer
+4) npx tailwindcss init
+5) npm i vite
+6) replace the script  is pakgie.json 
+ "scripts": {
+    "dev": "vite"
+  },
+7) /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["*"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+replace tailwind.config.js
+8)style.css creat and past this 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+9) ink this style into your head tag link as well style.css <link rel="stylesheet" href="style.css">
