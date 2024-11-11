@@ -17,6 +17,12 @@ module.exports = {
         smallFontColor:'#707086'
       }
     },
+    screens : {
+      'verySmall' : {'max' : "399px"},
+      'small' : {'max' :"550px"},
+      'medium' :{'max' :"768px"},
+      'large': {'max':'1070px'},
+  }
   },
   plugins: [],
 }
