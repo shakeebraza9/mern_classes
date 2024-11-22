@@ -1,0 +1,14 @@
+Git -v
+pwd
+ls
+cd foldername
+cd ..
+Git status
+git add file-name
+git add . 
+git commit -m "your commit type here"
+git push origin master
+//if any case this not workin 
+git push origin main
+
+git pull origin master
