@@ -2,11 +2,23 @@ Git -v
 pwd
 ls
 cd foldername
+mkdir foldername
+touch index.html
+rm index.html
 cd ..
+rm -r foldername
+cat index.html
+vi index.html
+
+//if edit the file Press ESC btn and enter colon :waq!  ->this command to save the file
+
 Git status
 git add file-name
 git add . 
+git restore filename
 git commit -m "your commit type here"
+git log
+git reset --hard HEAD-1
 git push origin master
 //if any case this not workin 
 git push origin main
