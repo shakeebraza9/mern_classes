@@ -32,7 +32,28 @@ obj1(obj); //call like this function obj1({title,tags,dsc})
 // console.log(newArray)
 
 
+// let arr = [4,5,67,42,5,334,345];
+// arr.forEach(function(val){
+// console.log(val)
+// // return val; foreach return kuch nhi krwata ha 
+// });
+
 let arr = [4,5,67,42,5,334,345];
-arr.forEach(function(val){
-console.log(val)
+// function print(val){
+//   console.log(val)
+
+// }
+// arr.forEach(print);
+arr.forEach((val)=>console.log(val));
+let newarrayre=arr.map(function(val){
+  console.log(val);
+  return val;
 });
+console.log(newarrayre);
+
+// arrow fun
+// let arr2 = [4,5,67,42,5,334,345];
+// const hello=(arr2)=>{
+// console.log(arr)
+// }
+// hello(arr2);
