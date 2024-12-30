@@ -77,11 +77,58 @@ let arr = [4,5,67,42,5,334,345];
 //   sum += arr[i];
 // }
 // console.log(sum)
+
+
 // reduce
 // const newreduce = arr.reduce((accumulator,currentValue)=>{
 //   accumulator = accumulator + currentValue;
 //   return accumulator;
 // },0);
-const newreduce = arr.reduce((acc,cur)=> acc += cur,0);
+// const newreduce = arr.reduce((acc,cur)=> acc += cur,0);
 
-console.log(newreduce)
+// console.log(newreduce)
+
+
+
+let students = [
+  { name: "Rinku", course: "Btech", branch: "cse" },
+  { name: "Rohit", course: "Btech", branch: "civil" },
+  { name: "Virat", course: "Btech", branch: "cse" },
+  { name: "Mukesh", course: "Btech", branch: "mechanical" },
+  { name: "Aksar", course: "Btech", branch: "civil" },
+];
+// const newArr = students.filter((val) => val.branch =='civil');
+const newArr = students.filter((val) => {
+  if(val.branch === 'civil'){
+      return val
+  }
+}).map((val) => val.name)
+
+
+console.log(newArr)
+
+const obj = {
+  name1: "Nishant",
+  id1: 23134563,
+  course1: "B.tech",
+  Branch1: "Cse",
+  hosteller1: false,
+};
+
+const obj2 = {
+  name: "Nishant",
+  id: 23134563,
+  course: "B.tech",
+  Branch: "Cse",
+  hosteller: false,
+};
+
+const newObj = {...obj, ...obj2}
+
+let objjj = {
+  name: "nishant",
+  name:"rahul"
+}
+console.log(objjj)
+
+// console.log(newObj)
