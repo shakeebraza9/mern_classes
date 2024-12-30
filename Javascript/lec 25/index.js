@@ -55,13 +55,14 @@ let arr = [4,5,67,42,5,334,345];
 // console.log(newarrayre);
 
 // Filter 
-const newfilters=arr.filter((val)=>{
-  if(val < 23){
-
-    return val;
-  }
-});
-console.log(newfilters);
+// const newfilters=arr.filter((val)=>{
+  //   if(val < 23){
+    
+  //     return val;
+  //   }
+  // });
+// const newfilters=arr.filter((val)=> val <= 23);
+// console.log(newfilters);
 
 // arrow fun
 // let arr2 = [4,5,67,42,5,334,345];
@@ -69,3 +70,18 @@ console.log(newfilters);
 // console.log(arr)
 // }
 // hello(arr2);
+
+//like reduce example
+// let sum =0;
+// for(let i=0;i< arr.length; i++){
+//   sum += arr[i];
+// }
+// console.log(sum)
+// reduce
+// const newreduce = arr.reduce((accumulator,currentValue)=>{
+//   accumulator = accumulator + currentValue;
+//   return accumulator;
+// },0);
+const newreduce = arr.reduce((acc,cur)=> acc += cur,0);
+
+console.log(newreduce)
