@@ -51,8 +51,17 @@ let arr = [4,5,67,42,5,334,345];
 //   return val;
 // });|
 
-let newarrayre=arr.map((val)=>val+=5);
-console.log(newarrayre);
+// let newarrayre=arr.map((val)=>val+=5);
+// console.log(newarrayre);
+
+// Filter 
+const newfilters=arr.filter((val)=>{
+  if(val < 23){
+
+    return val;
+  }
+});
+console.log(newfilters);
 
 // arrow fun
 // let arr2 = [4,5,67,42,5,334,345];
