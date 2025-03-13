@@ -39,13 +39,26 @@
 // });
 
 
-const btn = document.querySelector("#btn");
+// const btn = document.querySelector("#btn");
 
-function random(number) {
-  return Math.floor(Math.random() * (number + 1));
-}
+// function random(number) {
+//   return Math.floor(Math.random() * (number + 1));
+// }
 
-btn.addEventListener("click", () => {
-  const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
-  document.body.style.backgroundColor = rndCol;
+// btn.addEventListener("click", () => {
+//   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+//   document.body.style.backgroundColor = rndCol;
+// });
+
+
+
+const colorName = document.getElementById('colorname');
+
+colorName.addEventListener('input',(e)=>{
+    e.preventDefault();
+ console.log(colorName.value)
+document.getElementById('ptag').innerHTML = colorName.value;
+
+//  p.innerHTML =colorName.value;
+//     document.body.appendChild(p);
 });
