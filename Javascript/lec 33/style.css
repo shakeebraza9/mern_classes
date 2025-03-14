@@ -1,4 +1,4 @@
-#mainDiv {
+/* #mainDiv {
     background-color: palegreen;
 }
 
@@ -7,9 +7,9 @@
     width: 200px;
     height: 200px;
     background-color: #da9b9b;
-}
+} */
 
-/* body {
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -35,4 +35,4 @@
     width: 200px;
     height: 200px;
     background-color: peru;
-} */
+}
