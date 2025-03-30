@@ -1,6 +1,7 @@
 const tictac = document.querySelector('.tictac');
 const boxes = document.querySelectorAll('.box');
 const h1 = document.getElementsByTagName("h1");
+const rBtn = document.getElementById("rstbtn");
 let winingCondition = [
     [0, 1, 2],
     [3, 4, 5],
@@ -12,7 +13,7 @@ let winingCondition = [
     [2, 4, 6],
 ];
 let currentPlayer = "X"
-function startgame(e){
+function eventStart(e){
     if(e.target.className !== "tictac"){
         if(e.target.innerText ===""){
             e.target.textContent = currentPlayer;
@@ -24,7 +25,10 @@ function startgame(e){
 
 }
 
-tictac.addEventListener('click',startgame)
+function gameStart(){
+    
+    tictac.addEventListener('click',eventStart)
+}
 function winner(){
     // console.log(boxes[0].innerHTML)
     winingCondition.forEach((item)=>{
@@ -46,9 +50,20 @@ function winner(){
             boxes[item[2]].classList.add("winnerClass")
             count = 0
             h1[0].innerText = `Winner is ${val1}`;
-            tictac.removeEventListener("click", startgame);
+            tictac.removeEventListener("click", eventStart);
         }
     }
     })
 }
 
+rBtn.addEventListener('click',(e)=>{
+    currentPlayer = "X";
+    h1[0].innerText = "Tic Tac Toe Game";
+    boxes.forEach((item) => {
+        item.classList.remove("winnerClass")
+        item.innerText = "";
+    });
+
+    gameStart();
+})
+gameStart();
