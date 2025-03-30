@@ -2,6 +2,7 @@ const tictac = document.querySelector('.tictac');
 const boxes = document.querySelectorAll('.box');
 const h1 = document.getElementsByTagName("h1");
 const rBtn = document.getElementById("rstbtn");
+let count = 0;
 let winingCondition = [
     [0, 1, 2],
     [3, 4, 5],
@@ -19,6 +20,10 @@ function eventStart(e){
             e.target.textContent = currentPlayer;
             winner();
             currentPlayer = (currentPlayer === "X") ? "O" : "X"
+            count ++;
+        }
+        if(count === 9){
+            h1[0].innerText = `Match Draw`;
         }
     }
     
