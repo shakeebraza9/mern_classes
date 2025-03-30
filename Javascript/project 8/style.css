@@ -32,3 +32,8 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+
+.winnerClass {
+    background-color: lightgreen;
+    border: 3px solid rgb(247, 144, 0);
+}
