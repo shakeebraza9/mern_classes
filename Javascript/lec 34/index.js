@@ -32,3 +32,18 @@
 // setInterval(() => {
 //     console.log("hello");
 // }, 1000);
+
+
+
+function colorchnage() {
+    let body = document.getElementsByTagName("body");
+    let colorString = "123456789abcdef"
+    var color = "";
+    for (i = 0; i < 6; i++) {
+        let randNum = Math.floor(Math.random() * colorString.length);
+        color = color + colorString[randNum];
+
+    }
+    body[0].style.backgroundColor = `#${color}`
+}
+setInterval(colorchnage, 1000)
