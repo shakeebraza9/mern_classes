@@ -46,4 +46,4 @@ function colorchnage() {
     }
     body[0].style.backgroundColor = `#${color}`
 }
-setInterval(colorchnage, 1000)
+setInterval(colorchnage, 10000)
