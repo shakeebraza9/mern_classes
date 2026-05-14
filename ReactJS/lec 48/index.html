@@ -20,9 +20,17 @@
         // h1.innerHTML="hello world";
         // document.getElementById("main").appendChild(h1);
 
-        let  h1 = React.createElement("h1", null, "hello world");
+        let  h1 = React.createElement("h1", {id:1, className:"Shakeeb", style:{
+                color:"red",
+                backgroundColor:"yellow"
+        }}, "hello world");
+        let  h2 = React.createElement("h2", {id:1, className:"Shakeeb", style:{
+                color:"red",
+                backgroundColor:"yellow"
+        }}, "hello world");
+        let div = React.createElement("div", {} , [h1, h2]);
         let root = ReactDOM.createRoot(document.getElementById("main"));
-        root.render(h1);     
+        root.render(div);     
     </script>
 </body>
 </html>
