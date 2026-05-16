@@ -178,7 +178,7 @@ body {
     justify-content: center; 
     align-items: center;
     list-style: none;
-    gap: 30px; 
+    gap: 50px; 
 }
 
 .nav-menu li a {
@@ -212,7 +212,7 @@ body {
 }
 
 
-
+/* romo bar */
 .promo-bar {
     background-color: #ffffff;
     display: flex;
@@ -221,13 +221,13 @@ body {
     padding: 25px 40px;
     /* border-bottom: 3px solid #8e44ad;  */
     flex-wrap: wrap; 
-    gap: 15px;
+    gap: 5px;
 }
 
 .promo-item {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 5px;
 }
 
 
