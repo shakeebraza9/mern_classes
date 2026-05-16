@@ -1,11 +1,21 @@
 import './App.css'
 
 
-function Product(){
+// function Product(props){
+//   return (
+//     <>
+//       <h1>Product Name: {props.title}</h1>
+//       <h2>Price: {props.price}</h2>
+//     </>
+//   )
+// }
+
+// destracting props
+function Product({title, price}){
   return (
     <>
-      <h1>Product Name: Apple</h1>
-      <h2>Price: $1.00</h2>
+      <h1>Product Name: {title}</h1>
+      <h2>Price: {price}</h2>
     </>
   )
 }
@@ -18,8 +28,9 @@ function App() {
   return (
   // <div>{c}</div>
   <div>
-    <Product />
-    <Product />
+    <Product title="Apple" price="$1.00"/>
+    <Product title="Banana" price="$0.50"/>
+    {/* <Product /> */}
 
   </div>
   
