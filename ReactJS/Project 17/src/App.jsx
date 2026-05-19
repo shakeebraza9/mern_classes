@@ -1,32 +1,18 @@
 import { useState } from "react";
-
-  function App() {
-    // let count = 0;
-
-    let [data,setData] = useState(0);
-
-    // console.log(data);
-
-    function incressval(){
-      // setData(data + 1);
-      setData((data) => data + 1);
-      // count = count + 1;
-      // console.log(count);
-
-    }
-    function Drecessval(){
-      // setData(data - 1);
-      setData((data) => data - 1);
-      // count = count - 1;
-      // console.log(count);
-
-    }
+import Heading from "./component/Heading";
+import AllCards from "./component/AllCards";
+import {data} from "./utilis/data.js";
+  
+function App() {
+  function filterHandler(){
+    console.log("filter handler called")
+  }
   return(
     <div>
-      <h1>Hello, World!</h1>
-      <button onClick={incressval}>Increment</button>
-      <h2>{data}</h2>
-      <button onClick={Drecessval}>Decrment</button>
+      <Heading />
+      <input type="text" placeholder="Kya Cheya..." />
+      <button onClick={filterHandler}>Search</button>
+      <AllCards data={data} />
     </div>
   )
     
