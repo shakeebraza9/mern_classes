@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { use, useState } from "react";
 
   function App() {
 
+    const [data,setData] = useState(0)
+
+
+    function handdleIncress(){
+      setData((preValue) => preValue + 1);
+    }
   return(
     <div>
-      <h1>Hello, World!</h1>
+      {data}
+      <button onClick={handdleIncress}>Increment</button>
     </div>
   )
     
