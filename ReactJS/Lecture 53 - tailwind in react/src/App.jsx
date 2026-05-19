@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Heading from "./component/Heading";
+// import Heading from "./component/Heading";
 import AllCards from "./component/AllCards";
 import {data} from "./utilis/data.js";
   
@@ -14,9 +14,9 @@ function App() {
   }
   return(
     <div>
-      <Heading />
-      <input type="text" placeholder="Kya Cheya..."  onChange={(e) => setSearchTerm(e.target.value)} />
-      <button onClick={filterHandler}>Search</button>
+      <h1 className="font-bold text-3xl text-center my-10">Rasty Ka Mall Sasty Ma</h1>  
+      <input className="text-blue-50 border-amber-200" type="text" placeholder="Kya Cheya..."  onChange={(e) => setSearchTerm(e.target.value)} />
+      <button className="bg-blue-500 text-white p-2 rounded-xl " onClick={filterHandler}>Search</button>
       <AllCards data={filteredData} />
     </div>
   )

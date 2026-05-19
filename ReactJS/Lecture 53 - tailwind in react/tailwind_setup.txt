@@ -1,0 +1,14 @@
+first run this command 
+
+npm install tailwindcss @tailwindcss/vite
+
+secound go to vite.config.ts file add this line in import section import tailwindcss from '@tailwindcss/vite' and add this in plugins tailwindcss()
+
+index.css import @import "tailwindcss";
+
+now past this app.jsx file   
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+</h1> 
+
+for test

@@ -1,83 +1,24 @@
 function AllCards({ data }) {
     return (
-        <div
-            style={{
-                marginTop: "40px",
-                marginBottom: "40px",
-                width: "80%",
-                display: "flex",
-                flexWrap: "wrap",
-                justifyContent: "space-around",
-                gap: "40px",
-                marginLeft: "auto",
-                marginRight: "auto",
-            }}
-        >
+        <div className="mt-10 flex flex-wrap justify-around w-[80%] gap-10 mb-10">
             {data.map((singleItem) => (
                 <div
                     key={singleItem.id}
-                    style={{
-                        backgroundColor: "#f87171",
-                        width: "25%",
-                        maxHeight: "500px",
-                        padding: "16px",
-                        borderRadius: "16px",
-                        boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
-                    }}
+                    className="bg-red-400 w-[25%] max-h-[500px] p-4 rounded-xl shadow-xl"
                 >
                     <img
                         src={singleItem.thumbnail}
-                        alt={singleItem.title}
-                        style={{
-                            width: "100%",
-                            height: "70%",
-                            aspectRatio: "1 / 1",
-                            objectFit: "cover",
-                            borderRadius: "16px",
-                            boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
-                        }}
+                        className="aspect-square w-[100%] object-cover h-[70%] rounded-xl shadow-xl"
                     />
-
-                    <div
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "space-between",
-                        }}
-                    >
-                        <h2
-                            style={{
-                                textAlign: "left",
-                                margin: "20px 0",
-                                fontSize: "24px",
-                                overflow: "hidden",
-                                textOverflow: "ellipsis",
-                                whiteSpace: "nowrap",
-                            }}
-                        >
+                    <div className="flex items-center justify-between">
+                        <h2 className="text-left my-5 text-xl line-clamp-1">
+                            {" "}
                             {singleItem.title}
                         </h2>
-
-                        <p
-                            style={{
-                                fontSize: "40px",
-                            }}
-                        >
-                            ${singleItem.price}
-                        </p>
+                        <p className="text-4xl">${singleItem.price}</p>
                     </div>
 
-                    <p
-                        style={{
-                            textAlign: "left",
-                            overflow: "hidden",
-                            display: "-webkit-box",
-                            WebkitLineClamp: 2,
-                            WebkitBoxOrient: "vertical",
-                        }}
-                    >
-                        {singleItem.description}
-                    </p>
+                    <p className="text-left line-clamp-1 lg:line-clamp-2">{singleItem.description}</p>
                 </div>
             ))}
         </div>
