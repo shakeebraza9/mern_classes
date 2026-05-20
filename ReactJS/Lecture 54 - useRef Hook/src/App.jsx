@@ -22,9 +22,9 @@ function App() {
   return(
     <div>
       <form action="">
-        <input type="text" placeholder="Email" onChange={handleEmail} />
+        <input type="text" placeholder="Email" onChange={handleEmail} value={email} />
         <br />
-        <input type="password" placeholder="password" onChange={handlePassword}/>
+        <input type="password" placeholder="password" onChange={handlePassword} value={password} />
         <br />
         <br />
         <button onClick={fromSubmite}>Submit</button>
